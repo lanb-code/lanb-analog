@@ -2,6 +2,8 @@
 
 providing analog data for the FE
 
+[中文文档](./README-zh.md)
+
 ## Features
 
 ### Lightweight
