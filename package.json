@@ -1,0 +1,27 @@
+{
+  "name": "lanb-analog",
+  "version": "1.0.0",
+  "description": "providing analog data for the FE",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lanb-code/lanb-analog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lanb-code/lanb-analog/issues"
+  },
+  "homepage": "https://github.com/lanb-code/lanb-analog#readme",
+  "dependencies": {
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "webpack-dev-server": "^2.11.2"
+  }
+}
