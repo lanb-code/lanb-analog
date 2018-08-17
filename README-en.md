@@ -1,8 +1,9 @@
 # lanb-analog
 
-providing analog data for the FE
+为前端提供模拟测试数据
 
-
+[中文文档](./README.md)
+[English](./README-en.md)
 
 ## 特性
 
@@ -38,7 +39,7 @@ analog.data = [
 ]
 
 ```
-然后在我们请求Ajax的时候，url参数后的所有内容就会当成一个匹配项，如果这正匹配了，我们就会把data这个字段中的内容都作为结果返回。
+然后在我们请求Ajax的时候，url参数后的所有内容就会当成一个匹配项，如果正确匹配了，我们就会把data这个字段中的内容都作为结果返回。
 
 ```javascript
 $.ajax({

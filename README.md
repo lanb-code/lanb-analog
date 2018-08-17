@@ -2,7 +2,8 @@
 
 providing analog data for the FE
 
-[中文文档](./README-zh.md)
+[中文文档](./README.md)
+[English](./README-en.md)
 
 ## Features
 
@@ -37,7 +38,7 @@ analog.data = [
 
 ```
 
-Then when we request ajax, everything after the URL parameter is treated as a match, and if it matches, we return everything in the data field as a result.
+Then when we request Ajax, everything after the URL parameter is treated as a match, and if it matches correctly, we return everything in the data field as a result.
 
 ```javascript
 $.ajax({

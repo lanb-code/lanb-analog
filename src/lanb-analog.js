@@ -29,4 +29,4 @@ module.exports = function () {
             console.log("onerror called: %O", xhr)
         }
     })
-}(window)
+}()
