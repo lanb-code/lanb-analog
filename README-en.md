@@ -1,34 +1,32 @@
 # lanb-analog
 
-为前端提供模拟测试数据
+providing analog data for the FE
 
 [中文文档](./README.md)
 [English](./README-en.md)
 
-## 特性
+## Features
 
-### 轻量级
+### Lightweight
 
-Lanb-alalog是一个轻量级的小插件。
-它仅仅只有2.15k，却可以对所有的ajax请求进行监控。
+Lanb-alalog is a lightweight plug-in. It is only **2.15k**, but it can monitor all Ajax requests.
 
-### 拦截
+### Intercepting
 
-它依赖于Ajax-hook，如果你想要自定义自己的请求拦截器，那么该项目可以是一个很好的参考
+It depends on Ajax-hook. It relies on Ajax-hook, and if you want to customize your request interceptor, the project can be a good reference
 
-## 开始
+## Get Started
 
-该项目基于webpack构建，如果你是个爱折腾的人，那么你可以按照如下方法，来获得这个库。
+The project is built on webpack, and if you're a toss-and-turn person, you can get the library in the following ways.
 
 ```sh
 npm install
 npm run start
 ```
 
-如果想马上获得这个库，那么你可以参考 ./dist/index.html
+If you want to get this library right away, you can refer to ./dist/index.html.
 
-我们只要像这样重写alalog这个参数
-
+We just need to rewrite the alalog parameter like this.
 ```javascript
 var analog = {};
 analog.data = [
@@ -39,7 +37,8 @@ analog.data = [
 ]
 
 ```
-然后在我们请求Ajax的时候，url参数后的所有内容就会当成一个匹配项，如果正确匹配了，我们就会把data这个字段中的内容都作为结果返回。
+
+Then when we request Ajax, everything after the URL parameter is treated as a match, and if it matches correctly, we return everything in the data field as a result.
 
 ```javascript
 $.ajax({
@@ -51,16 +50,14 @@ $.ajax({
     }, error(xhr) {
         console.log(xhr.responseJSON)
     },
-}) 
+})   
 ```
 
-## 社区
+## Community
 
-- [组织](https://github.com/lanb-code)
-- [加入讨论](https://github.com/lanb-code/lanb-analog/issues)
+- [GitHub organization](https://github.com/lanb-code)
+- [Join gitter discuss](https://github.com/lanb-code/lanb-analog/issues)
 
-
-## 许可证书
+## License
 
 [MIT](https://github.com/lanb-code/lanb-analog/blob/master/LICENSE)
-
