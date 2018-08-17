@@ -4,7 +4,7 @@
   "description": "providing analog data for the FE",
   "main": "index.js",
   "scripts": {
-    "start": "webpack",
+    "start": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/lanb-code/lanb-analog#readme",
   "dependencies": {
+    "ajax-hook": "^1.8.0",
+    "url-search-params-polyfill": "^4.0.1",
     "webpack": "^3.10.0"
   },
   "devDependencies": {
