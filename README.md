@@ -54,6 +54,19 @@ $.ajax({
 }) 
 ```
 
+## 扩展
+
+```javascript
+Analog.fn({
+    // 需要被重写和扩展的方法
+    open: (arg, xhr) => {
+        console.log("%O", xhr)
+    }
+})
+```
+
+我们将保留最最基本的功能，直到该方法被覆盖为止。
+
 ## 社区
 
 - [组织](https://github.com/lanb-code)

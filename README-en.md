@@ -53,6 +53,19 @@ $.ajax({
 })   
 ```
 
+## Extend
+
+```javascript
+Analog.fn({
+    // methods that need to be rewritten and expanded
+    open: (arg, xhr) => {
+        console.log("%O", xhr)
+    }
+})
+```
+
+We will retain the most basic functions until the method is covered.
+
 ## Community
 
 - [GitHub organization](https://github.com/lanb-code)

@@ -13,13 +13,21 @@
 <body>
 
     <script>
-        var analog = {};
+
+        Analog.fn({
+            open: (arg, xhr) => {
+                console.log("%O", xhr)
+            }
+        })
+
+        var analog = {}
         analog.data = [
             {
                 url: 'http://lanb-analog.com/list',
                 data: [{ id: 1, name: "测试1" }, { id: 2, name: "测试2" }]
             }
         ]
+
         $.ajax({
             url: '?url=http://lanb-analog.com/list',
             type: 'post',
