@@ -10,7 +10,7 @@
 ### 轻量级  
 
 Lanb-alalog是一个轻量级的小插件。
-它仅仅只有2.15k，却可以对所有的ajax请求进行监控。  
+它的代码很少，却可以对所有的ajax请求进行监控。  
 
 ### 拦截  
 
@@ -30,7 +30,7 @@ npm run start
 我们只要像这样重写alalog这个参数  
 
 ```javascript
-var analog = {};
+var analog = {}
 analog.data = [
     {
         url: 'http://lanb-analog.com/list',
@@ -47,9 +47,9 @@ $.ajax({
     url: '?url=http://lanb-analog.com/list',
     type: 'post',
     dataType: 'json',
-    success(result) {
+    success (result) {
         console.log(result)
-    }, error(xhr) {
+    }, error (xhr) {
         console.log(xhr.responseJSON)
     },
 }) 

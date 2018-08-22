@@ -9,7 +9,7 @@ providing analog data for the FE
 
 ### Lightweight  
 
-Lanb-alalog is a lightweight plug-in. It is only **2.15k**, but it can monitor all Ajax requests.  
+Lanb-alalog is a lightweight plug-in. Its code is very rare, but it can monitor all Ajax requests.  
 
 ### Intercepting  
 
@@ -28,7 +28,7 @@ If you want to get this library right away, you can refer to ./dist/index.html.
 
 We just need to rewrite the alalog parameter like this.  
 ```javascript
-var analog = {};
+var analog = {}
 analog.data = [
     {
         url: 'http://lanb-analog.com/list',
@@ -45,9 +45,9 @@ $.ajax({
     url: '?url=http://lanb-analog.com/list',
     type: 'post',
     dataType: 'json',
-    success(result) {
+    success (result) {
         console.log(result)
-    }, error(xhr) {
+    }, error (xhr) {
         console.log(xhr.responseJSON)
     },
 })   
