@@ -31,13 +31,11 @@ module.exports = ((window) => {
   let defaultOption = {
     // hook callbacks
     onreadystatechange: (xhr) => {
-      console.log("onreadystatechange called: %O", xhr)
+      console.log('onreadystatechange called: %O', xhr)
     },
     onload: (xhr) => {
       if (typeof analog === 'undefined') {
-        let analog = {}
-        analog.data = []
-        matchData(analog, xhr)
+        console.error('lanb-analog.js: Make sure analog is defined.')
       } else {
         matchData(analog, xhr)
       }
@@ -45,7 +43,7 @@ module.exports = ((window) => {
     },
     // hook function
     open: (arg, xhr) => {
-      console.log("open called: %O", xhr)
+      console.log('open called: %O', xhr)
     },
     onerror: (xhr) => {
       console.log('onerror called: %O', xhr)
